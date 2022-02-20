@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/katy-game-xo/static/css/main.22941023.css",
+    "main.js": "/katy-game-xo/static/js/main.a19f146a.js",
+    "index.html": "/katy-game-xo/index.html",
+    "main.22941023.css.map": "/katy-game-xo/static/css/main.22941023.css.map",
+    "main.a19f146a.js.map": "/katy-game-xo/static/js/main.a19f146a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22941023.css",
+    "static/js/main.a19f146a.js"
+  ]
+}
