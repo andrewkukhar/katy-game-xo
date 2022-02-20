@@ -2,6 +2,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+class Clock extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date() };
+    }
+
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.tick(),
+            1000
+        );
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
+
+    tick() {
+        this.setState({
+            date: new Date()
+        });
+    }
+
+    render() {
+        return (
+            <div className="tick-time">
+                <h6>At now {this.state.date.toLocaleTimeString()}.</h6>
+            </div>
+        );
+    }
+}
 function Square(props) {
     return (
         <button
@@ -11,7 +42,6 @@ function Square(props) {
         </button>
     );
 }
-
 class Board extends React.Component {
     renderSquare(i) {
         return (
@@ -55,6 +85,7 @@ class Game extends React.Component {
             xIsNext: true,
         };
     }
+
     handleClick(i) {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
         const current = history[history.length - 1];
@@ -108,6 +139,9 @@ class Game extends React.Component {
                     />
                 </div>
                 <div className="game-info">
+                    <div className="clock">
+                        <Clock />
+                    </div>
                     <div>{status}</div>
                     <ol>{moves}</ol>
                 </div>
