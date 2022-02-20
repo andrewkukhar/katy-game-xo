@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/katy-game-xo/static/css/main.22941023.css",
-    "main.js": "/katy-game-xo/static/js/main.6d368911.js",
+    "main.js": "/katy-game-xo/static/js/main.6bd0bd05.js",
     "index.html": "/katy-game-xo/index.html",
     "main.22941023.css.map": "/katy-game-xo/static/css/main.22941023.css.map",
-    "main.6d368911.js.map": "/katy-game-xo/static/js/main.6d368911.js.map"
+    "main.6bd0bd05.js.map": "/katy-game-xo/static/js/main.6bd0bd05.js.map"
   },
   "entrypoints": [
     "static/css/main.22941023.css",
-    "static/js/main.6d368911.js"
+    "static/js/main.6bd0bd05.js"
   ]
 }
