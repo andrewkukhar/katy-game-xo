@@ -28,7 +28,7 @@ class Clock extends React.Component {
     render() {
         return (
             <div className="tick-time">
-                <h6>At now {this.state.date.toLocaleTimeString()}.</h6>
+                At now {this.state.date.toLocaleTimeString()}.
             </div>
         );
     }
@@ -57,6 +57,7 @@ class Board extends React.Component {
                 <div className="game-title">
                     Tic-Tac-Toe
                 </div>
+                <div className="clock"><Clock /></div>
                 <div className="board-row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
@@ -142,9 +143,6 @@ class Game extends React.Component {
                     />
                 </div>
                 <div className="game-info">
-                    <div className="clock">
-                        <Clock />
-                    </div>
                     <div>{status}</div>
                     <ol>{moves}</ol>
                 </div>
